@@ -3,3 +3,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@theme {
+  --color-blue: #0055D2;
+  --color-tan: #F8ECD8;
+  --color-black: #363636;
+  --color-periwinkle: #C1CEFE;
+  --color-red: #F06543;
+  --color-green: #00A067;
+}

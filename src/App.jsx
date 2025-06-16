@@ -1,25 +1,22 @@
-import React from 'react'
-import Home from './pages/Home'
-import Skills from './components/Skills'
-import Navbar from './components/Navbar'
-import About from './components/About'
-import Footer from './components/Footer'
-import Projects from './components/Projects'
-import Contact from './components/Contact'
-import CustomCursor from './utils/CursorAnimation'
+// import React from 'react'
+import HomePage from './pages/HomePage'
+import ArtInvestigator from './pages/ArtInvestigator';
+import Hstream from './pages/Hstream';
+import Canvas from './pages/Canvas';
+import DreamCube from './pages/DreamCube';
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export default function App() {
   return (
-    <div className='font-sora scroll-smooth overflow-x-hidden'>
-      <CustomCursor/>
-      <Navbar />
-      <Home />
-      <Skills />
-      <About />
-      <Projects />
-      <Contact />
-
-      <Footer />
-    </div>
+  <BrowserRouter>
+      <Routes>
+        <Route index element={<HomePage />} />
+        <Route path="art-investigator" element={<ArtInvestigator />} />
+        <Route path="hstream" element={<Hstream />} />
+        <Route path="canvas" element={<Canvas />} />
+        <Route path="dreamcube" element={<DreamCube />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
