@@ -12,10 +12,10 @@ export default function App() {
   <BrowserRouter>
       <Routes>
         <Route index element={<HomePage />} />
-        <Route path="art-investigator" element={<ArtInvestigator />} />
-        <Route path="hstream" element={<Hstream />} />
-        <Route path="canvas" element={<Canvas />} />
-        <Route path="dreamcube" element={<DreamCube />} />
+        <Route path="proj-art-investigator" element={<ArtInvestigator />} />
+        <Route path="proj-hstream" element={<Hstream />} />
+        <Route path="proj-canvas" element={<Canvas />} />
+        <Route path="proj-dreamcube" element={<DreamCube />} />
       </Routes>
     </BrowserRouter>
   )
